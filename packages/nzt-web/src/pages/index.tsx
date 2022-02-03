@@ -21,8 +21,8 @@ export const Home = observer(() => {
   const { lang, god } = useStore()
   const { library, chainId } = useWeb3React()
 
-  const myOracleContractFactory = new MyOracle__factory().attach('')
-  const simpleContractFactory = new MySimpleContract__factory().attach('')
+  const myOracleContractFactory = new MyOracle__factory().attach('0x6a32385ed3f04133b27BDe70AEfaA0b04Bb700BB')
+  const simpleContractFactory = new MySimpleContract__factory().attach('0x9D71D7bEe4adb538c684A3a1406F4846e5F03724')
 
   const [rectangle, setRectangle] = React.useState<[number, number, string][]>([])
 
