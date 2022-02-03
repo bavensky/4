@@ -56,7 +56,7 @@ export const Home = observer(() => {
     if (!library) return;
     console.log('chainId', chainId, 'library is ready')
     const simpleContract:MySimpleContract =  simpleContractFactory.connect(library.getSigner())
-    simpleContract.setName('Hello World!');
+    //simpleContract.setName('Hello World!');
 
 
   }, [library])
